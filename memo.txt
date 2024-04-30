@@ -1,0 +1,10 @@
+1.pipenv 실행후, pip파일들 install
+2.alembic init migrations
+3.[파일명: projects/myapi/alembic.ini]  -> sqlalchemy.url = sqlite:///./myapi.db 로 수정
+4.[파일명: projects/myapi/migrations/env.py] -> import models 추가 후,  target_metadata = models.Base.metadata 로 수정
+5. alembic revision --autogenerate 실행 (리버전 파일 생성)
+6. alembic upgrade head 실행 ( 리버전 파일 실행)
+
+서버 실행: uvicorn main:app --reload
+
+그후 데이터 작업은 https://wikidocs.net/175970 참조
