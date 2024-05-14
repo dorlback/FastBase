@@ -8,6 +8,14 @@ fastapi = "*"
 sqlalchemy = "*"
 alembic = "*"
 uvicorn = {extras = ["standard"], version = "*"}
+google-auth-oauthlib = "*"
+requests = "*"
+google-api-python-client = "*"
+google-auth-httplib2 = "*"
+authlib = "*"
+httpx = "*"
+pydantic = {extras = ["email"], version = "*"}
+bcrypt = "*"
 
 [dev-packages]
 
